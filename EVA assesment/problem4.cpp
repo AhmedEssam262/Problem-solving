@@ -18,7 +18,6 @@ long long lcm_sum(int number) {
         sum += lcm(i, number);
     }
     return sum;
-
 }
 int main()
 {
