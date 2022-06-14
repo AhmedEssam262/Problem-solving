@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int calc_Sum(int n)
-{
+int calc_Sum(int n){
 	int sum = 0;
 	while (n != 0) {
 		sum += n % 10;
@@ -11,8 +10,7 @@ int calc_Sum(int n)
 	return sum;
 }
 //we count from 1 to get the smallest number
-int smallest_no(int n)
-{
+int smallest_no(int n){
 	int i = 1;
 	while (1) {
 		if (calc_Sum(i) == n)
@@ -20,10 +18,8 @@ int smallest_no(int n)
 		i++;
 	}
 }
-
 // Driver code
-int main()
-{
+int main(){
 	int n;
 	cout << "Enter the number of test cases\n";
 	cin >> n;
@@ -32,6 +28,5 @@ int main()
 		cout << "Enter a number\n";
 		cin >> no;
 		cout << smallest_no(no) << endl;
-
 	}
 }
