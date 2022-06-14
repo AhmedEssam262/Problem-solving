@@ -1,6 +1,5 @@
 //in this code we fill the coloum one time and fill the rows another time then 
 //we take the larger
-
 #include<iostream>
 #define MAX 6
 using namespace std;
